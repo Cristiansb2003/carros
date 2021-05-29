@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<repaso.Models.vehiculo>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Coches";
 }
 
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Crear Nuevo", "Guardar")
+    @Html.ActionLink("Agregar Coches", "Guardar")
 </p>
 <div class="form-group">
     <div class="col-md-offset-2  col-md-10">
@@ -34,7 +34,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.marca)
             </td>
-            <td>
+            <td>  
                 @Html.DisplayFor(modelItem => item.precio)
             </td>
             <td>
