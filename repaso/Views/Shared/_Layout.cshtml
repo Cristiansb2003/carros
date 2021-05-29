@@ -7,6 +7,40 @@
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <style>
+       
+        #titulo{
+            font-size:32px;
+            text-align:center;
+            color:white;
+            position:relative;
+            top: 2px;
+            left:420px;
+            font-family:cursive;
+        }
+        .body-content{
+            background-color: rgba(0,0,0,0.6);
+            margin-top:50px;
+            color:white;
+        }
+        body {
+            background: #fbfcfc;
+            font-family: cursive;
+        }
+        a {
+            padding: .375rem .75rem;
+            border-radius: .25rem;
+            background-color: #fff;
+            color: #000;
+            transition: background-color .15s ease-in-out;
+           
+        }
+            a:hover {
+                text-decoration: none;
+                background-color: #f75d5d;
+                color: #fff;
+            }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -17,13 +51,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+              <span id="titulo">Carros que vuelan!!</span>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    
                 </ul>
             </div>
         </div>
